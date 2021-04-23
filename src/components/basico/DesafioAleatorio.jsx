@@ -12,6 +12,7 @@ export default function Aleariório({ max, min }) {
       <p>Valor Máximo{min}</p>
       <p>O numero aleatório é {getRandomArbitrary(min, max)}</p>
       <br />
+      
     </div>
   );
 }
