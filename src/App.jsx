@@ -9,6 +9,11 @@ import MembroFamilia from './components/basico/FamiliarMenbro'
 import AlunosLista from "./components/Repeticao/ListAlunos";
 import "./App.css";
 import ProdutosLista from "./components/Repeticao/ListaProdutos";
+import ParOuImpar from "./components/Condicional/ParouImpar";
+import Usuario from "./components/Condicional/usuarioInfo";
+import DiretaPai from "./components/Comunicacao/DiretaPai";
+import IndiretaPai from "./components/Comunicacao/IndiretaPai";
+import Formulario from "./components/Formulario/formulario";
 
 export default function App() {
   return (
@@ -46,7 +51,24 @@ export default function App() {
         <Card title="#07 Lista De produtos" color="blue">
           <ProdutosLista></ProdutosLista>
         </Card>
+        
+        <Card title="#08 Renderizacao Condicional" color="#982395">
+          <ParOuImpar numero={21}></ParOuImpar>
+          <Usuario usuario={{nome: 'Allyson'}}/>
+          <Usuario usuario={{email: 'Allysonfr83@gmail.com'}}/>
+        </Card>
 
+        <Card title="#09 Comunicaçao direta" color="#982395">
+         <DiretaPai/>
+        </Card>
+
+        <Card title="#10 Comunicaçao Indireta" color="#982395">
+        <IndiretaPai/>
+        </Card>
+
+        <Card title="#11 Componente controlado" color="#982395">
+        <Formulario/>
+        </Card>
       </div>
     </div>
   );
