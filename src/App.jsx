@@ -14,6 +14,7 @@ import Usuario from "./components/Condicional/usuarioInfo";
 import DiretaPai from "./components/Comunicacao/DiretaPai";
 import IndiretaPai from "./components/Comunicacao/IndiretaPai";
 import Formulario from "./components/Formulario/formulario";
+import NumerosMegaSena from "./components/MegaSena/Mega";
 
 export default function App() {
   return (
@@ -58,16 +59,20 @@ export default function App() {
           <Usuario usuario={{email: 'Allysonfr83@gmail.com'}}/>
         </Card>
 
-        <Card title="#09 Comunicaçao direta" color="#982395">
+        <Card title="#09 Comunicaçao direta" color="yellow">
          <DiretaPai/>
         </Card>
 
-        <Card title="#10 Comunicaçao Indireta" color="#982395">
+        <Card title="#10 Comunicaçao Indireta" color="grey">
         <IndiretaPai/>
         </Card>
 
-        <Card title="#11 Componente controlado" color="#982395">
+        <Card title="#11 Componente controlado" color="red">
         <Formulario/>
+        </Card>
+
+        <Card title="#12 megaSena Desafio" color="#982395">
+        <NumerosMegaSena qtd={10}/>
         </Card>
       </div>
     </div>
